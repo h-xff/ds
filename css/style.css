@@ -1,0 +1,137 @@
+/* 设置页面主体颜色和字体 */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* 设置包含登录表单的容器样式 */
+.login-container {
+    background-image: url('/bg.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 设置包含登录表单组件的容器样式 */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 32px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* 设置标题样式 */
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+/* 设置输入组件样式 */
+.input-group {
+    margin-bottom: 16px;
+}
+
+/* 添加标签样式 */
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* 设置输入框样式 */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* 设置错误消息样式 */
+.error-message {
+    color: #ff0000;
+    margin-bottom: 16px;
+}
+
+/* 设置登录按钮样式 */
+button[name="login"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* 设置其他按钮样式 */
+.button-container button {
+    background-color: #f2f2f2;
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+/* 在小屏幕上隐藏背景图像 */
+@media screen and (max-width: 600px) {
+    .login-container {
+        background-image: none;
+    }
+}
+
+
+/* 设置输入组件样式 */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+}
+
+/* 设置登录和注册按钮的样式 */
+button[name="login"],
+button[name="register"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* 设置返回登录按钮的样式 */
+.button-container button {
+    background-color: transparent;
+    color: #2b2626;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 设置错误和成功消息的样式 */
+.error-message,
+.success-message {
+    color: #421515;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 1rem;
+    font-weight: bold;
+}
